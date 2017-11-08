@@ -78,6 +78,7 @@ int main ( void )
    printf("\n\n");
    
    // Run all tests using the automated interface
+   /* CU_set_output_filename("shippable"); */
    CU_automated_run_tests();
    CU_list_tests_to_file();
 
