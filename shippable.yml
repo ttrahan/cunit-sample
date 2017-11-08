@@ -5,7 +5,7 @@ compiler:
 
 build:
   ci:
-    - sudo apt-get install libcunit1
+    - sudo apt-get -y install libcunit1 libcunit1-dev
     - gcc -Wall -c max.c
     - gcc -Wall -L/usr/local/lib -o max_test max_test.c max.o -lcunit
     - ./max_test
