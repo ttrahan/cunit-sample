@@ -9,5 +9,7 @@ build:
     - gcc -Wall -c max.c
     - gcc -Wall -L/usr/local/lib -o max_test max_test.c max.o -lcunit
     - ./max_test
+    - ls .
     - cp CUnitAutomated-Results.xml $SHIPPABLE_BUILD_DIR/shippable/testresults
+    - ls $SHIPPABLE_BUILD_DIR/shippable/testresults
 
