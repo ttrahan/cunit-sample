@@ -1,0 +1,12 @@
+language: c
+
+compiler:
+  - gcc
+
+build:
+  ci:
+    - gcc -Wall -c max.c
+    - gcc -Wall -L/usr/local/lib -o max_test max_test.c max.o -lcunit
+    - ./max_test
+    - cp CUnitAutomated-Results.xml $SHIPPABLE_BUILD_DIR/shippable/testresults
+
