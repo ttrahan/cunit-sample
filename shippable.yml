@@ -12,7 +12,7 @@ build:
     # - xsltproc tests/cunit-to-junit.xsl CUnitAutomated-Results.xml > $SHIPPABLE_BUILD_DIR/shippable/testresults/test_results.xml 
     # - sh -x ./gen-junit-format.sh
     # - cat $SHIPPABLE_BUILD_DIR/shippable/testresults/test_results.xml
-    - sh -x ./gen-junit-format-junitv2.sh
+    - sh -x ./gen-junit-format-junitv2_success.sh
     - cat $SHIPPABLE_BUILD_DIR/shippable/testresults/test_results_junitv2.xml
-    # - sh -x ./gen-junit-format-junitv3.sh
+    # - sh -x ./gen-junit-format-junitv3_success.sh
     # - cat $SHIPPABLE_BUILD_DIR/shippable/testresults/test_results_junitv3.xml
