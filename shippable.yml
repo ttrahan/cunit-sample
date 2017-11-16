@@ -7,7 +7,7 @@ build:
   ci:
     - sudo apt-get -y install libcunit1 libcunit1-dev
     - gcc -Wall -c max.c
-    - gcc -Wall -L/usr/local/lib -o max_test max_test.c max.o -lcunit
-    - ./max_test
+    - gcc -Wall -L/usr/local/lib -o tests/max_test tests/max_test.c max.o -lcunit
+    - ./tests/max_test
     # - xsltproc tests/cunit-to-junit.xsl CUnitAutomated-Results.xml > $SHIPPABLE_BUILD_DIR/shippable/testresults/test_results.xml 
     - sh -x ./gen-junit-format.sh
