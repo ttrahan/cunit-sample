@@ -11,3 +11,4 @@ build:
     - ./tests/max_test
     # - xsltproc tests/cunit-to-junit.xsl CUnitAutomated-Results.xml > $SHIPPABLE_BUILD_DIR/shippable/testresults/test_results.xml 
     - sh -x ./gen-junit-format.sh
+    - cat $SHIPPABLE_BUILD_DIR/shippable/testresults/test_results.xml
